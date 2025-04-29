@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prediksi Masa Depan Buat Lucu lucuan aja</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prediksi Masa Depan Buat lucu no musyrik 🔮</h1>
+            <p>Isi data dan pilih kategori prediksi masa depanmu!</p>
+        </header>
+
+        <section id="form-section">
+            <form id="prediction-form">
+                <label for="fullname">Nama Lengkap:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Masukkan nama lengkapmu" required autocomplete="off" />
+
+                <fieldset>
+                    <legend>Pilih Kategori Prediksi (boleh lebih dari satu):</legend>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="category" value="karir" /> Karir</label>
+                        <label><input type="checkbox" name="category" value="percintaan" /> Percintaan</label>
+                        <label><input type="checkbox" name="category" value="keuangan" /> Keuangan</label>
+                        <label><input type="checkbox" name="category" value="kesehatan" /> Kesehatan</label>
+                        <label><input type="checkbox" name="category" value="pendidikan" /> Pendidikan</label>
+                        <label><input type="checkbox" name="category" value="tebak-nama-jodoh" /> Tebak Nama Jodoh</label>
+<label><input type="checkbox" name="category" value="kata-kata-hari-ini" /> Kata-Kata Hari Ini</label>
+                        <label><input type="checkbox" name="category" value="prediksi-kekayaan" /> Prediksi Kekayaan</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" id="predict-btn">Prediksi Sekarang</button>
+            </form>
+        </section>
+
+<section id="loading-section" class="hidden">
+    <div class="loading-container">
+        <div class="misty"></div>
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+        <p>Meramal masa depanmu...</p>
+    </div>
+</section>
+
+        <section id="result-section" class="hidden">
+            <h2>Hasil Prediksi untuk <span id="user-name"></span> 🔮</h2>
+            <div id="prediction-output" class="typing-effect"></div>
+            <div class="result-buttons">
+                <button id="share-btn">Bagikan Hasil</button>
+                <button id="retry-btn">Coba Lagi</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
