@@ -43,6 +43,6 @@ Projek ini dibuat oleh Izhar2005 hanya untuk bersenang-senang dan eksperimen web
 
 🌐 Live Demo
 Lihat versi online-nya di:
-👉 https://usernamekamu.github.io/prediksi-masa-depan
+👉https://web-ramal-masa-depan-aseli-git-main-izhar2005s-projects.vercel.app/
 
 Jika kamu suka project ini, silakan kasih bintang ⭐ atau fork!
